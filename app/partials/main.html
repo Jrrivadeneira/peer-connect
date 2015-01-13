@@ -1,12 +1,9 @@
 
 <fa-app class="full-screen">
-  
-    
-      
       <fa-scroll-view fa-pipe-from="myEventHandler" fa-options="options.myScrollView">
       <fa-view ng-repeat="item in list">
         <fa-modifier fa-size="[500, 520]">
-              <fa-grid-layout fa-options="myGridLayoutOptions">
+              <fa-grid-layout class="scroll" fa-options="myGridLayoutOptions">
     <fa-flipper  >
     <fa-modifier   fa-size="[350, 200]"  >
       <fa-surface id="{{$index}}"  fa-pipe-to="myEventHandler" fa-background-color="item.bgColor" style="margin:20px;" fa-click="flipIt($index)"> {{$index}}  {{item.content}}</fa-surface>

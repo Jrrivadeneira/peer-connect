@@ -1,3 +1,4 @@
+
 'use strict';
 
 angular.module('famousAngularStarter')
@@ -20,7 +21,7 @@ angular.module('famousAngularStarter')
 
       $scope.options = {
           myScrollView: {
-              clipSize: 100,
+              clipSize: 500,
               paginated: false,
               speedLimit: 5,
               direction: 0,
